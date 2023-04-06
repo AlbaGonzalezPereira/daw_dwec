@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tarea DWEC03</title>
+  </head>
+  <body>
+    <form>
+      <input type="button" value="Abrir Ventana" onclick="abrirVentana()" />
+    </form>
+
+    <script>
+      // ************** ventana **********//
+      let nuevaVentana;
+      function abrirVentana() {
+        nuevaVentana = window.open(
+          "",
+          "",
+          "width=800,height=800,resizable=false,scrollbars=no"
+        ); //no se puede hacer redimensionable
+        nuevaVentana.document.writeln(
+          "<h3>Ejemplo de Ventana Nueva</h3>" + "<br/>"
+        );
+        nuevaVentana.document.write("URL completa: " + location.href + "<br>");
+        nuevaVentana.document.writeln(
+          "Protocolo utilizado: " + location.protocol + "<br>"
+        );
+        nuevaVentana.document.writeln(
+          "Nombre en código del navegador: " +
+            nuevaVentana.navigator.appCodeName +
+            "<br/>"
+        );
+        //para detectar java disponible en esa ventana del navegador:
+        if (nuevaVentana.navigator.javaEnabled() == true) {
+          nuevaVentana.document.writeln(
+            "Java SI disponible en esta ventana" + "<br>"
+          );
+        } else {
+          nuevaVentana.document.writeln(
+            "Java NO disponible en esta ventana" + "<br>"
+          );
+        }
+
+        // ********* iframe ***********//
+        nuevaVentana.document.write(
+          '<iframe src="http://www.google.es/" width="800" height="600" align="center" title="Iframe de Google" scrolling = "no"></iframe>'
+        );
+      }
+
+      //**********   Solicitamos datos ***********//
+      let nombre = prompt("Introduzca su NOMBRE y APELLIDOS: ");
+      let dia = prompt("Introduzca DÍA de nacimiento (en número): ");
+      let mes = prompt("Introduzca MES de nacimiento (en número): ");
+      let ano = prompt("Introduzca AÑO de nacimiento (en número) : ");
+
+      //************   declaramos variables  ***********//
+      let hoy = new Date();
+      let edad = hoy.getFullYear() - ano;
+      //let fecha = new Date(ano, mes - 1, dia); al final no la usé
+      let meses = [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre",
+      ];
+      numeroDia = new Date(ano, mes - 1, dia).getDay(); //da un número entre 0 y 6
+      let dias = [
+        "domingo",
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+      ];
+      let nombreDia = dias[numeroDia]; // nos trae el nombre del array dias
+
+      //************ Imprimimos los datos **************//
+      document.writeln("<h1>TAREA DWEC03</H2><HR />");
+      document.writeln("¡¡Buenos días " + nombre + "!!" + "<br>");
+      document.writeln(
+        "Tu nombre tiene " +
+          nombre.length +
+          " carácteres, incluídos espacios" +
+          "<br>"
+      );
+      //pongo a minúsculas todo para que pueda buscar las posiciones y no haga diferencias entre mayúsculas y minúsculas
+      document.writeln(
+        "La primera letra A de tu nombre está en la posición: " +
+          nombre.toLowerCase().indexOf("a") +
+          "<br>"
+      );
+      //pongo a minúsculas todo para que pueda buscar las posiciones (la primera es 0) y no haga diferencias entre mayúsculas y minúsculas
+      document.writeln(
+        "La última letra A de tu nombre está en la posición: " +
+          nombre.toLowerCase().lastIndexOf("a") +
+          "<br>"
+      );
+      document.writeln(
+        "Tu nombre menos las 3 primeras letras es: " + nombre.slice(2) + "<br>"
+      );
+      document.writeln(
+        "Tu nombre todo en mayúsculas es: " + nombre.toUpperCase() + "<br>"
+      );
+      document.writeln("Tu edad es: " + edad + " años." + "<br>");
+      document.writeln(
+        "Naciste un feliz: " +
+          nombreDia +
+          " " +
+          dia +
+          " de " +
+          meses[mes - 1] +
+          " del año " +
+          ano +
+          "<br>"
+      );
+      //para hallar el coseno
+      //La función estática Math.cos() devuelve el coseno del ángulo especificado,
+      //que debe ser especificado en radianes, por lo que pasaremos el ángulo a radianes con Math.PI
+      document.writeln(
+        "El coseno de 180 es: " + Math.cos((180 * Math.PI) / 180) + "<br/>"
+      );
+      //para hallar el número mayor
+      document.writeln(
+        "El número mayor de (34,67,23,75,35,19) es: " +
+          Math.max(34, 67, 23, 75, 35, 19) +
+          "<br>"
+      );
+      document.writeln(
+        //si queremos que saque un número entero al azar
+        //Math.ramdom() nos halla el número al azar y con Math.floor ya obtenemos el número entero
+        "Ejemplo de número al azar: " +
+          Math.floor(Math.random() * 1000000000) +
+          "<br>"
+      );
+    </script>
+  </body>
+</html>

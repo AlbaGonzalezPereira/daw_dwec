@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8"/>
+    <title>Tarea para DWEC02</title>
+</head>
+<body>
+	<h1>Apartado1</h1>
+    <h4>Realizar una pequeña aplicación en JavaScript que muestre lo siguiente:</h4>
+    <ul>
+        <li>Tabla multiplicar del 7</li>
+        <li>Tabla de sumar del 8</li>
+        <li>Tabla de dividir del 9</li>
+    </ul>
+
+    <p>Utilizar los tres tipos de bucles que hay en JavaScript (para cada número un tipo de bucle diferente)</p>
+
+<script>
+    /***** tabla de multiplicar*****/
+    var num =7;
+	document.write("<h3>Tabla de multiplicar del "+ num +"</h3>");
+
+		for(i = 1;i<=10;i++){
+				document.write(num + " x " + i + "= " + num * i + "<br>");
+		        }
+
+
+    /*****tabla de sumar*****/
+	var num2=8;
+    document.write("<h3>Tabla de sumar del "+ num2 +"</h3>");
+    var i = 0;
+    while(i<=10){
+        document.write(num2 + " + " + i + " = " + (num2 + i) + "<br>");
+        i++;
+    }
+
+
+    /*****tabla de dividir******/
+    var num3=9;
+    document.write("<h3> Tabla de dividir del " + num3 + "</h3>");
+
+    var i = 0;
+    do {
+        document.write((num3*i) + " ÷ " + num3 + " = " + i + "<br>");
+        i++;
+    } while (i <=10);
+
+</script>
+<br>
+
+<h1>Apartado2</h1>
+
+<h4>Imprime el resultado de las siguientes operaciones empleando desplazamiento de bits:</h4>
+    <ul>
+        <li><em>125 / 8 =</em></li>
+        <li><em>40 x 4 =</em></li>
+        <li><em>25 / 2 =</em></li>
+        <li><em>10 x 16 =</em></li>
+    </ul>
+    <script>
+
+    /****** 125/8 *****/
+    var n1=125;
+    var n2=8;
+    document.write("<p>El resultado de 125/8 es "+ (n1<<=n2) + " si desplazamos bits a la izquierda" + "</p>");
+    document.write("<p>El resultado de 125/8 es "+ (n1>>>=n2) + " si desplazamos bits a la derecha" + "</p>" + "<hr>");
+
+    /****** 40x4 *****/
+    var n3=40;
+    var n4=4;
+    document.write("<p>El resultado de 40x4 es "+ (n3<<=n4) + " si desplazamos bits a la izquierda" + "</p>");
+    document.write("<p>El resultado de 40x4 es "+ (n3>>>=n4) + " si desplazamos bits a la derecha" + "</p>" + "<hr>");
+
+    /****** 25x2 *****/
+    var n5=25;
+    var n6=2;
+    document.write("<p>El resultado de 25x2 es "+ (n5<<=n6) + " si desplazamos bits a la izquierda" + "</p>");
+    document.write("<p>El resultado de 25x2 es "+ (n5>>>=n6) + " si desplazamos bits a la derecha" + "</p>" + "<hr>");
+
+    /****** 10x16 *****/
+    var n7=10;
+    var n8=16;
+    document.write("<p>El resultado de 10x16 es "+ (n7<<=n8) + " si desplazamos bits a la izquierda" + "</p>");
+    document.write("<p>El resultado de 10x16 es "+ (n7>>>=n8) + " si desplazamos bits a la derecha" + "</p>");
+   
+    </script>
+
+</body>
+</html>
