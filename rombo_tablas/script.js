@@ -21,7 +21,7 @@ function dibujarRombo() {
             cadena += "<tr>";
             cadena += "<td></td>".repeat( Math.abs( medio - fila)); //PAra espacio en blanco \u00a0
             cadena += "<td>*</td>".repeat( fila <= medio ? 2 * fila - 1 : (numero - fila) * 2 + 1);
-             //PAra salto de linea \n 
+             //Para salto de linea \n 
             cadena += "</tr>";
         }
         cadena += "</table>";
