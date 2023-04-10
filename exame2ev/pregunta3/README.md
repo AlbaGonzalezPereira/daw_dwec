@@ -8,39 +8,4 @@ Desarrolla una página web y un script Javascript que solicite del usuario una f
 Por ejemplo: (las entradas aparecen en fondo <font style = "background-color:grey; color: black">gris</font>, las salidas calculadas en fondo <font style = "background-color:lightblue; color: black">azul</font>)  
 (<font style = "background-color: lightgreen; color: black">Enviar</font> y <font style = "background-color:violet; color: black">Reset</font> representan botones html)
 
-
-<div style="background-color: lightyellow; color: black; border: 1px black;">
-Introduzca una frase con palabras con sólo letras minúsculas sin acentuar: <font style = "background-color: lightgrey">la casa era muy bonita</font>
-
-<br>
-
-<font style = "background-color: lightgreen">Enviar</font>  <font style = "background-color:violet">Reset</font>
-
-<span style ="background-color: lightblue">Escrita al revés: atinob yum are asac al</span>
-<br><span style ="background-color: lightblue">No es un palíndromo</span>
-</div>
-
-<br>
-
-<div style="background-color: lightyellow; color: black; border: 1px black;">
-Introduzca una frase con palabras con sólo letras minúsculas sin acentuar: <font style = "background-color: lightgrey">dabale arroz a la zorra el abad
-
-<br>
-
-<font style = "background-color: lightgreen">Enviar</font>  <font style = "background-color:violet">Reset</font>
-
-<span style ="background-color: lightblue">Escrita al revés: daba le arroz al a zorra elabad</span>
-<br><span style ="background-color: lightblue">Sí es un palíndromo!!!</span>
-</div>
-<br>
-<div style="background-color: lightyellow; color: black; border: 1px black;">
-Introduzca una frase con palabras con sólo letras minúsculas sin acentuar: <font style = "background-color: lightgrey">reconocer</font>
-
-<br>
-
-<font style = "background-color: lightgreen">Enviar</font>  <font style = "background-color:violet">Reset</font>
-
-<span style ="background-color: lightblue">Escrita al revés: reconocer</span>
-<br><span style ="background-color: lightblue">Sí es un palíndromo!!!</span>
-</div>
-
+<div align = center><img src="https://github.com/AlbaGonzalezPereira/daw_dwec/blob/main/exame2ev/pregunta2/imaxes/img.JPG" alt="Palíndromo" style = "width: 60%"></div>
