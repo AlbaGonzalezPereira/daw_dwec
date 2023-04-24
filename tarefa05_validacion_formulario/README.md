@@ -107,8 +107,9 @@ Realizar la **validación del formulario** facilitado en el enunciado, cumpliend
 </html>
 ```
 ---
-**RECOMENDACIONES**:
+### **RECOMENDACIONES**:
 
-Se recomienda realizar una función para cada una de las validaciones de tal forma que se pueda llamar a cada una de forma independiente. Las funciones deberían devolver true si la validación ha sido correcta o false (y los mensajes de error solicitados) si la validación ha sido incorrecta.
+Se recomienda **realizar una función** para cada una de las validaciones de tal forma que se pueda llamar a cada una de forma independiente. Las funciones deberían devolver true si la validación ha sido correcta o false (y los mensajes de error solicitados) si la validación ha sido incorrecta.
+
 
 
