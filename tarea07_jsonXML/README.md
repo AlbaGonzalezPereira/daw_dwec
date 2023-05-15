@@ -6,7 +6,9 @@ Tu tarea consiste en lo siguiente:
 1. Buscar **APIs libres** que te ofrezcan unos datos tanto en formato XML como en formato JSON. Debes detallar qué tipos de datos te ofrecen dichas páginas e indicar claramente su URL. Ten en cuenta que vas a necesitar una que ofrezca datos en formato XML y otra en formato JSON.
 
     [https://datos.gob.es/es/accessible-apidata](https://datos.gob.es/es/accessible-apidata)
+
     [https://api.geekdo.com/xmlapi/geeklist/315535](https://api.geekdo.com/xmlapi/geeklist/315535)
+    
     [https://date.nager.at/api/v3/publicholidays/2023/ES](https://date.nager.at/api/v3/publicholidays/2023/ES)
 
 
