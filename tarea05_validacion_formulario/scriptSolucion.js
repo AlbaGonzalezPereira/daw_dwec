@@ -57,7 +57,16 @@ document.addEventListener("DOMContentLoaded", function () {
      */
     function validarNombre() {
         //definimos la expresión regular
-        let expresionReg = /^[A-ZÁÉÍÓÚÜÑ]+(?:['\s][A-ZÁÉÍÓÚÜÑ]+)*$/i; 
+        //let expresionReg = /^[A-ZÁÉÍÓÚÜÑ]+(?:['\s][A-ZÁÉÍÓÚÜÑ]+)*$/i; 
+        let expresionReg = /^[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]+(?:['\s][A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]+)*$/; //con esta valida las tildes, ñ y diéresis en nombres propios con una o más palabras
+        /**SIGNIFICADO DE LA EXPRESIÓN:
+         * ^ indica inicio de la cadena
+         * [A-ZÁÉÍÓÚÜÑ]: indica que el primer carácter debe ser una letra mayúscula, incluyendo las acentuadas y la "Ñ".
+         * [a-záéíóúüñ]+: indica una o más letras minúsculas, incluyendo las acentuadas y la "ñ".
+         * ['\s]: indica un apóstrofe (') o un espacio en blanco (\s).
+         * (*): indica que se puede repetir la secuencia 0 veces o más
+         * $ indica el final de la cadena
+         */
         if (!expresionReg.test(nombre.value.toUpperCase())) {//no sería necesario pasarlo a mayúsculas pero por si acaso
             //comprobamos que nombre cumple la expresión regular
             error.innerHTML += "<p>ERROR: Nombre incorrecto</p>";
@@ -72,7 +81,17 @@ document.addEventListener("DOMContentLoaded", function () {
      */
     function validarApellidos() {
         //definimos la expresión regular para apellidos en español con espacios, tildes y ñ
-        let expresionReg = /^[A-ZÁÉÍÓÚÜÑ]+(?:['\s][A-ZÁÉÍÓÚÜÑ]+)*$/i; 
+        //let expresionReg = /^[A-ZÁÉÍÓÚÜÑ]+(?:['\s][A-ZÁÉÍÓÚÜÑ]+)*$/i; 
+        let expresionReg = /^[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]+(?:['\s][A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]+)*$/; //con esta valida las tildes, ñ y diéresis en apellidos con una o más palabras
+        /**SIGNIFICADO DE LA EXPRESIÓN:
+         * ^ indica inicio de la cadena
+         * [A-ZÁÉÍÓÚÜÑ]: indica que el primer carácter debe ser una letra mayúscula, incluyendo las acentuadas y la "Ñ".
+         * [a-záéíóúüñ]+: indica una o más letras minúsculas, incluyendo las acentuadas y la "ñ".
+         * ['\s]: indica un apóstrofe (') o un espacio en blanco (\s).
+         * (*): indica que se puede repetir la secuencia 0 veces o más
+         * $ indica el final de la cadena
+         */
+        
         if (!expresionReg.test(apellidos.value.toUpperCase())) {//no sería necesario pasarlo a mayúsculas pero por si acaso
             //comprobamos que apellidos cumple la expresión regular
             error.innerHTML += "<p>ERROR: Apellidos incorrectos</p>";
@@ -128,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
  * Explicar las partes de la expresión regular mediante comentarios.
  */
 function validarEmail(){
-    let expresionEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,}$/
+    let expresionEmail = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/;
     /** SIGNIFICADO DE LA EXPRESIÓN:
      * ^ indica el inicio 
      * [\w-\.]+ indica uno o más caracteres, guiÓN o punto
