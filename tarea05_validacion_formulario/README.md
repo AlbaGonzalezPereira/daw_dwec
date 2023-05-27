@@ -111,12 +111,13 @@ Realizar la **validación del formulario** facilitado en el enunciado, cumpliend
 
 Se recomienda **realizar una función** para cada una de las validaciones de tal forma que se pueda llamar a cada una de forma independiente. Las funciones deberían devolver true si la validación ha sido correcta o false (y los mensajes de error solicitados) si la validación ha sido incorrecta.
 
+---
+---
+
 ## EXPRESIONES REGEX:
 Las expresiones regulares (***RegExp*** o ***RegEx***) son un sistema para buscar, capturar o reemplazar texto utilizando **patrones**.
 
 Permiten filtrar textos para encontrar coincidencias, comprobar la validez de fechas, documentos de identidad o contraseñas, se pueden utilizar para reemplazar texto con unas características concretas por otro, y muchos más usos.
-
-Podemos comprobar nuestras expresiones regulares en: [https://regex101.com/](https://regex101.com/).
 
 Breve lista de los elementos **más utilizados** en las expresión regulares:
 *	**^** Indica el principio de una cadena
@@ -129,7 +130,9 @@ Breve lista de los elementos **más utilizados** en las expresión regulares:
 *	**+** 1-n ocurrencias de la expresión
 *	**\*** 0-n ocurrencias de la expresión
 *	**\\** Para escribir un caracter especial como los anteriores y que sea tratado como un literal
-*	**|** Para indicar una disyunción lógica (para elegir entre dos valores: a|b se tiene que cumplir al menos uno de los dos)
+*	**|** Para indicar una disyunción lógica (para elegir entre dos valores: a|b se tiene que cumplir al menos uno de los dos).
+
+Podemos comprobar nuestras expresiones regulares en: [https://regex101.com/](https://regex101.com/).
 
 Podemos descargarnos alguna **cheatsheet** en la siguiente página:
 [https://cheatography.com/davechild/cheat-sheets/regular-expressions/pdf/](https://cheatography.com/davechild/cheat-sheets/regular-expressions/pdf/)
@@ -158,6 +161,14 @@ Las expresiones regulares se utilizan con los métodos ``RegExp`` ``test()`` y `
 * ``split()`` -> Utiliza una expresión regular o una cadena fija para dividir una cadena en un arreglo de subcadenas.
 
 Cuando desees saber si un patrón se encuentra en una cadena, utiliza los métodos ``test()`` o ``search()``; para obtener más información (pero una ejecución más lenta) utiliza los métodos ``exec()`` o ``match()``. Si usas ``exec()`` o ``match()`` y si la búsqueda tiene éxito, estos métodos devuelven un arreglo y actualizan las propiedades del objeto expresión regular asociado y también del objeto de expresión regular predefinido, el objeto RegExp. Si la búsqueda falla, el método ``exec()`` devuelve ``null`` (que coacciona a false).
+
+Las expresiones regulares se pueden utilizar tanto en javascript, como php y java. 
+
+Hay diferentes páginas que nos ayudarán a conocer y usar algunos de los **métodos más utilizados en php**, entre ellas:
+
+* [https://diego.com.es/expresiones-regulares-en-php](https://diego.com.es/expresiones-regulares-en-php), en el apartado **9. Funciones PCRE**
+* [https://www.mclibre.org/consultar/php/lecciones/php-expresiones-regulares.html](https://www.mclibre.org/consultar/php/lecciones/php-expresiones-regulares.html)
+* [https://code.tutsplus.com/es/tutorials/how-to-work-with-regular-expressions-in-php--cms-36797](https://code.tutsplus.com/es/tutorials/how-to-work-with-regular-expressions-in-php--cms-36797)
 
 ### EJEMPLOS DE ALGUNAS EXPRESIONES REGEX:
 ```js
