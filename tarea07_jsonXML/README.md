@@ -21,4 +21,7 @@ Tu tarea consiste en lo siguiente:
 
 ### UTILIDADES:
 
-Podemos encontrar una interesante web de JQuery cheatsheet [aquí](https://oscarotero.com/jquery/).
+Podemos encontrar **JQuery cheatsheet** en las siguientes webs:
+* [https://oscarotero.com/jquery/](https://oscarotero.com/jquery/)
+* [https://htmlcheatsheet.com/jquery/](https://htmlcheatsheet.com/jquery/)
+* [http://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf](http://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf)
