@@ -111,5 +111,85 @@ Realizar la **validación del formulario** facilitado en el enunciado, cumpliend
 
 Se recomienda **realizar una función** para cada una de las validaciones de tal forma que se pueda llamar a cada una de forma independiente. Las funciones deberían devolver true si la validación ha sido correcta o false (y los mensajes de error solicitados) si la validación ha sido incorrecta.
 
+## EXPRESIONES REGEX:
+Las expresiones regulares (***RegExp*** o ***RegEx***) son un sistema para buscar, capturar o reemplazar texto utilizando **patrones**.
+
+Permiten filtrar textos para encontrar coincidencias, comprobar la validez de fechas, documentos de identidad o contraseñas, se pueden utilizar para reemplazar texto con unas características concretas por otro, y muchos más usos.
+
+Podemos comprobar nuestras expresiones regulares en: [https://regex101.com/](https://regex101.com/).
+
+Breve lista de los elementos **más utilizados** en las expresión regulares:
+*	**^** Indica el principio de una cadena
+*	**$** Indica el final de una cadena
+*	**()** Un agrupamiento de parte de una expresión
+*	**[]** Un conjunto de caracteres de la expresión
+*	**{}** Indica un número o intervalo de longitud de la expresión
+*	**.** Cualquier caracter salvo el salto de línea
+*	**?** 0-1 ocurrencias de la expresión
+*	**+** 1-n ocurrencias de la expresión
+*	**\*** 0-n ocurrencias de la expresión
+*	**\\** Para escribir un caracter especial como los anteriores y que sea tratado como un literal
+*	**|** Para indicar una disyunción lógica (para elegir entre dos valores: a|b se tiene que cumplir al menos uno de los dos)
+
+Podemos descargarnos alguna **cheatsheet** en la siguiente página:
+[https://cheatography.com/davechild/cheat-sheets/regular-expressions/pdf/](https://cheatography.com/davechild/cheat-sheets/regular-expressions/pdf/)
+
+### Búsqueda avanzada con banderas:
+Las expresiones regulares tienen seis **indicadores opcionales** que permiten funciones como la búsqueda global y que no distinga entre mayúsculas y minúsculas. Estos indicadores se pueden usar por separado o juntos en cualquier orden y se incluyen como parte de la expresión regular.
+
+* **g**	-> Búsqueda global.	
+* **i**	-> Búsqueda que no distingue entre mayúsculas y minúsculas.	
+* **m**	-> Búsqueda multilínea.	
+* **s**	-> Permite que el **.** coincida con caracteres de nueva línea.	
+* **u**	()"unicode") -> Trata un patrón como una secuencia de puntos de código Unicode.	
+* **y**	-> Realiza una búsqueda "pegajosa" que coincida a partir de la posición actual en la cadena de destino.
+
+### Usar expresiones regulares en JavaScript
+
+Las expresiones regulares se utilizan con los métodos ``RegExp`` ``test()`` y ``exec()`` y con los métodos de ``String``, ``match()``, ``replace()``, ``search()`` y ``split()``.
+
+* ``exec()`` -> Ejecuta una búsqueda por una coincidencia en una cadena. Devuelve un arreglo de información o null en una discrepancia.
+* ``test()`` ->	Prueba una coincidencia en una cadena. Devuelve true o false.
+* ``match()`` -> Devuelve un arreglo que contiene todas las coincidencias, incluidos los grupos de captura, o null si no se encuentra ninguna coincidencia.
+* ``matchAll()`` -> Devuelve un iterador que contiene todas las coincidencias, incluidos los grupos de captura.
+* ``search()`` -> Prueba una coincidencia en una cadena. Devuelve el índice de la coincidencia, o -1 si la búsqueda falla.
+* ``replace()`` -> Ejecuta una búsqueda por una coincidencia en una cadena y reemplaza la subcadena coincidente con una subcadena de reemplazo.
+* ``replaceAll()`` -> Ejecuta una búsqueda de todas las coincidencias en una cadena y reemplaza las subcadenas coincidentes con una subcadena de reemplazo.
+* ``split()`` -> Utiliza una expresión regular o una cadena fija para dividir una cadena en un arreglo de subcadenas.
+
+Cuando desees saber si un patrón se encuentra en una cadena, utiliza los métodos ``test()`` o ``search()``; para obtener más información (pero una ejecución más lenta) utiliza los métodos ``exec()`` o ``match()``. Si usas ``exec()`` o ``match()`` y si la búsqueda tiene éxito, estos métodos devuelven un arreglo y actualizan las propiedades del objeto expresión regular asociado y también del objeto de expresión regular predefinido, el objeto RegExp. Si la búsqueda falla, el método ``exec()`` devuelve ``null`` (que coacciona a false).
+
+### EJEMPLOS DE ALGUNAS EXPRESIONES REGEX:
+```js
+// Expresión regular para validar un número de teléfono en el formato XXX-XXX-XXXX
+let expresionTel = '/^\d{3}-\d{3}-\d{4}$/'; 
+```
+```js
+//Expresión regular que valida números de teléfono ya sean fijos como móviles, sin espacios ni guiones
+let expresionTel= /^[689]\d{8}$/; 
+```
+
+```js
+//Validar un número con o sin signo: 
+let expresionNum = '/^[+-]?\d+(\.\d+)?$/';
+let expresionNum2 = /^[-+]?[0-9]+(\.[0-9]+)?$/;
+```
+```js
+//Expresión que valida los campos de texto NOMBRE en español con espacios, tildes y ñ
+let expresion2 = /^[(A-ZÁÉÍÓÚÜÑ)][(a-záéíóúüñ)]+(?:['\s][A-ZÁÉÍÓÚÜÑ][(a-záéíóúüñ)]+)*$/; 
+```
+```js
+//Expresión regular que permita solamente 8 números un guión y una letra
+let expresionNif = /^\d{8}-[A-Z]$/; 
+```
+```js
+//Expresión regular que valida un email
+let expresionEmail = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/  
+```
+```js
+//Expresión regular para Fecha: dd/mm/yyyy o dd-mm-yyyy
+let expresionFecha = /^([0-2][0-9]|3[0-1])(\/|-)(0[1-9]|1[0-2])\2(\d{4})$/; 
+```
+
 
 
