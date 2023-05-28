@@ -2,6 +2,7 @@ const boton=document.getElementById('botonEnviar');
 const numero =document.querySelector('input');
 const parrafo = document.getElementById('error');
 const fondo = document.querySelector('#fondo');
+
 boton.addEventListener('click',abrirMsg);
 fondo.addEventListener('click',cambiarFondo);
 
