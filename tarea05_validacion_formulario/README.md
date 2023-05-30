@@ -144,7 +144,7 @@ Las expresiones regulares tienen seis **indicadores opcionales** que permiten fu
 * **i**	-> Búsqueda que no distingue entre mayúsculas y minúsculas.	
 * **m**	-> Búsqueda multilínea.	
 * **s**	-> Permite que el **.** coincida con caracteres de nueva línea.	
-* **u**	()"unicode") -> Trata un patrón como una secuencia de puntos de código Unicode.	
+* **u**	"unicode" -> Trata un patrón como una secuencia de puntos de código Unicode.	
 * **y**	-> Realiza una búsqueda "pegajosa" que coincida a partir de la posición actual en la cadena de destino.
 
 ### Usar expresiones regulares en JavaScript
