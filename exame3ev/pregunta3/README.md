@@ -9,7 +9,6 @@ Crea una página web con un script en Javascript que permita al usuario introduc
     * cada vez que el usuario haga clic en "Actualizar Temperatura", se actualizará dicho mensaje sin recargar el resto de la página (usar Ajax).
     * en la actualización del mensaje, se le aplicará un efecto especial usando jQuery para mostrar al usuario que se está actualizando.
 
-    **Enlace:**
 
     https://api.openweathermap.org/data/2.5/weather?&lat=42.264799151433&lon=-8.765128490705925&units=metric&lang=es&appid=8a2423b28d69b2f14a25bca771904482
 
