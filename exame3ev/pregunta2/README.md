@@ -19,6 +19,8 @@ Desarrolla una aplicación en JavaScript **"Busca letras"** disponga, como míni
     * cuando el usuario haga **clic en una celda** con una letra oculta, la letra se mostrará en un color escogido al azar y el "Contador" (R5) se actualizará para indicar cuantas letras quedan por descubrir.
     * si, por el contrario, la **celda no contiene una letra** de la frase, se incrementará el contador ``"Intentos fallidos"`` (R6), para reflejar dicho suceso.
 
+    <div align = center><img src="https://github.com/AlbaGonzalezPereira/daw_dwec/blob/main/exame3ev/img/tabla.png" alt="Cuadrícula celdas" style = "width: 60%"></div>
+
 * **R8)** El juego **terminará** cuando el jugador encuentre todas las letras o cuando haga clic en ``"Limpiar"`` (R4).
 
 * **R9)** Para darle una **apariencia más atractiva** al juego, se aplicarán los efectos siguientes:

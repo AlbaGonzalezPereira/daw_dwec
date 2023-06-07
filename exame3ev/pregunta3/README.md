@@ -19,7 +19,7 @@ Crea una página web con un script en Javascript que permita al usuario introduc
 (Las entradas aparecen en **fondo gris**, las salidas calculadas en **fondo azul**)
 (Enviar y Reset representan **botones html**)
 
-<div align = center><img src="https://github.com/AlbaGonzalezPereira/daw_dwec/blob/main/exame2ev/pregunta3/img/imaxe.JPG" alt="Rombo temperatura" style = "width: 60%"></div>
+<div align = center><img src="https://github.com/AlbaGonzalezPereira/daw_dwec/blob/main/exame3ev/img/img1.PNG" alt="Rombo temperatura" style = "width: 60%"></div>
 
-<div align = center><img src="https://github.com/AlbaGonzalezPereira/daw_dwec/blob/main/exame2ev/pregunta3/img/imaxe.JPG" alt="Rombo temperatura" style = "width: 60%"></div>
+<div align = center><img src="https://github.com/AlbaGonzalezPereira/daw_dwec/blob/main/exame3ev/img/img2.PNG" alt="Rombo temperatura" style = "width: 60%"></div>
 
