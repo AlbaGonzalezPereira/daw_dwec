@@ -18,4 +18,4 @@ Cada letra se imprimirá en un color al azar.
 Por ejemplo: (las entradas aparecen en fondo gris, las salidas calculadas en fondo azul)
 (Enviar y Reset representan botones html) 
 
-<div align = center><img src="https://github.com/AlbaGonzalezPereira/daw_dwec/blob/main/exame3ev/img/tabla.png" alt="Cuadrícula celdas" style = "width: 30%"></div>
+<div align = center><img src="https://github.com/AlbaGonzalezPereira/daw_dwec/blob/main/exameFinal/img.PNG" alt="Cuadrado letras" style = "width: 30%"></div>
